@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-family: "CircularSpotify", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-zinc-950 text-white;
+}
+
+* {
+  @apply outline-0;
+}
+
+.ease {
+  transition: all 0.2s ease;
+}
+
+.container-medium {
+  @apply mx-auto max-w-[1400px] px-6;
+}
+
+.btn,
+.button {
+  transition: all 0.2s ease;
+  @apply font-semibold py-4 px-6 cursor-pointer rounded-sm inline-block leading-tight items-center justify-center;
+}
